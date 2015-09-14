@@ -28,3 +28,6 @@ node_modules
 
 # Pesky Mac OS X
 .DS_Store
+
+# Ghost data file
+content/data/ghost-dev.db
