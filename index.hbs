@@ -1,0 +1,66 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+<nav class="navbar navbar-fixed-top navbar-gray" role="navigation">
+        <div class="navbar-inner">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img class="img" src="http://jupyter.org/assets/nav_logo.svg" style="height: 45px">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="navbar-nav navbar-right" id="navbar-items">
+                    <li>
+                        <a href="http://jupyter.readthedocs.org/en/latest/install.html" class="tab" id="tab" target="_blank">INSTALL</a>
+                    </li>
+                    <li>
+                        <a href="" class="tab">PROJECT</a>
+                    </li>
+                    <li>
+                        <a href="http://jupyter.readthedocs.org/en/latest/" class="tab" target="_blank">DOCUMENTATION</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.jupyter.org/" class="tab navbar-active" target="_blank">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="donate.html" class="tab">DONATE</a>
+                    </li>
+                    <!--<li>
+                        <a href="#" class="tab" id="tab">DONATE</a>
+                    </li> -->
+                </ul>
+            </div>
+
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </div>
+</nav>
+   
+
+<section>
+    <div class="header">
+        <div class="container">
+            <h1>Project Jupyter Blog</h1>
+            <p>Stay updated with the project's most recent developments, the moment they happen</p>
+        </div>
+    </div>
+</section>
+
+{{! The main content area on the homepage }}
+<main id="content" class="content" role="main">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+
+</main>
